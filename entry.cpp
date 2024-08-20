@@ -7,10 +7,7 @@
 
 // outside of func shouldnt appear in ida
 std::map<DWORD, std::string> ids = {
-
-    {325464894, XOR("ADMIN") },
-    {-465270867, XOR("GOOD") },
-    {-253486855, XOR("slowalk") },
+    {674666432, XOR("admin")}
 };
 
 int __stdcall DllMain(HMODULE self, ulong_t reason, void* reserved) {
