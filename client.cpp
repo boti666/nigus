@@ -143,7 +143,9 @@ void Client::OnMapload() {
 		g_hooks.m_net_channel.init(g_csgo.m_net);
 		g_hooks.m_net_channel.add(INetChannel::PROCESSPACKET, util::force_cast(&Hooks::ProcessPacket));
 		g_hooks.m_net_channel.add(INetChannel::SENDDATAGRAM, util::force_cast(&Hooks::SendDatagram));
-		//g_hooks.m_net_channel.add(INetChannel::SENDNETMSG, util::force_cast(&Hooks::SendNetMsg));
+		
+		// testing
+		g_hooks.m_net_channel.add(INetChannel::SENDNETMSG, util::force_cast(&Hooks::SendNetMsg));
 
 		m_server_ip = g_csgo.m_net->GetAddress();
 
